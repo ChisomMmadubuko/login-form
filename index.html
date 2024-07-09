@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login-form</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-[#F28383] from-10% via-[#9D6CD2] via-30% to-[#481EDC] to-90% flex items-center justify-center h-screen"
+  >
+    <div
+      class="max-w-[960px] bg-white grid grid-cols-2 items-center gap-20 p-5 rounded-2xl"
+    >
+      <div class="relative">
+        <img src="assets/signup-background.svg" alt="" class="w-full" />
+        <img
+          src="assets/teamwork.svg"
+          alt=""
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4"
+        />
+      </div>
+      <div class="max-w-80 grid gap-5">
+        <h1 class="text-2xl font-bold mb-2">Sign in</h1>
+        <p class="mb-4">
+          Access to 300+ hours of courses, tutorials and livestreams
+        </p>
+        <form action="#" method="POST" class="space-y-6">
+          <div class="relative">
+              <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                  <i class="fa-solid fa-envelope-open"></i>
+              </div>
+              <input type="email" placeholder="Email Address" aria-label="Email Address" class="w-80 bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg text-black placeholder-gray-500"/>
+          </div>
+          <div class="relative">
+              <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                  <i class="fa-solid fa-lock"></i>
+              </div>
+              <input type="password" placeholder="Password" aria-label="Password" class="w-80 bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg text-black placeholder-gray-500"/>
+          </div>
+          <button type="submit" class="bg-gradient-to-r from-blue-400 to-cyan-200 w-80 font-semibold rounded-full py-2 text-white">Sign in</button>
+        </form>  
+        <div class="mt-4 space-y-2 text-sm">
+          <p>
+            Don't have an account?
+            <a href="#" class="text-blue-600 hover:underline">Sign up</a>
+          </p>
+          <p>
+            Forgot password?
+            <a href="#" class="text-blue-600 hover:underline">Reset password</a>
+          </p>
+          <p>
+            Don't have a password yet?
+            <a href="#" class="text-blue-600 hover:underline">Set password</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
